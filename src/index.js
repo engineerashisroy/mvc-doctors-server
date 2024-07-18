@@ -13,6 +13,8 @@ app.use(cors());
 app.use(express.urlencoded({ limit: "16kb", extended: true }));
 app.use(express.static("public/temp"));
 app.use(cookieParser());
+
+//get route just testing
 app.get("/", (req, res) => {
   res.send("Hello world");
 });
